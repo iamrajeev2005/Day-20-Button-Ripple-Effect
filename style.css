@@ -1,0 +1,39 @@
+*{
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+    font-family: "Gilroy";
+}
+html,body{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(41, 41, 41);
+}
+button{
+    background-color: purple;
+    color: #fff;
+    padding: 13px 25px;
+    border: 0;
+    font-size: 2vw;
+    position: relative;
+    overflow: hidden;
+    text-transform: uppercase;
+}
+.circle{
+    position: absolute;
+    background-color: #fff;
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+    transform: translate(-50%,-50%) scale(0);
+    animation: scale .5s ease-out;
+}
+@keyframes scale {
+    to{
+        transform: translate(-50%,-50%) scale(1);
+        opacity: 0;
+    }
+}
